@@ -1,0 +1,6 @@
+C:\git\Ftp\FtpClient\FtpClient\bin\Debug\FtpClient.exe
+C:\git\Ftp\FtpClient\FtpClient\bin\Debug\FtpClient.pdb
+C:\git\Ftp\FtpClient\FtpClient\obj\Debug\FtpClient.Properties.Resources.resources
+C:\git\Ftp\FtpClient\FtpClient\obj\Debug\FtpClient.csproj.GenerateResource.Cache
+C:\git\Ftp\FtpClient\FtpClient\obj\Debug\FtpClient.exe
+C:\git\Ftp\FtpClient\FtpClient\obj\Debug\FtpClient.pdb
