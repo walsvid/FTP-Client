@@ -15,6 +15,7 @@ namespace FtpClient
         string ftpServerIP;
         string ftpUserID;
         string ftpPassword;
+        private string currentDir = "/";
 
         public FtpClientForm()
         {
@@ -42,51 +43,50 @@ namespace FtpClient
             FileInfo fileInf = new FileInfo(filename);
             string uri = "ftp://" + ftpServerIP + "/" + fileInf.Name;
             FtpWebRequest reqFTP;
-
-            // Create FtpWebRequest object from the Uri provided
+            
+            // 从提供的Uri创建FtpWebRequest对象
             reqFTP = (FtpWebRequest)FtpWebRequest.Create(new Uri("ftp://" + ftpServerIP + "/" + fileInf.Name));
-
-            // Provide the WebPermission Credintials
+            
+            // 访问许可验证
             reqFTP.Credentials = new NetworkCredential(ftpUserID, ftpPassword);
-
-            // By default KeepAlive is true, where the control connection is not closed
-            // after a command is executed.
+            
+            // 默认KeepAlive是true，命令执行后连接没有关闭
             reqFTP.KeepAlive = false;
-
-            // Specify the command to be executed.
+            
+            // 指定需要执行的命令
             reqFTP.Method = WebRequestMethods.Ftp.UploadFile;
-
-            // Specify the data transfer type.
+            
+            // 选择数据传输的方式，是否使用二进制方式
             reqFTP.UseBinary = true;
-
-            // Notify the server about the size of the uploaded file
+            
+            // 提示服务器要上传的文件的大小
             reqFTP.ContentLength = fileInf.Length;
-
-            // The buffer size is set to 2kb
+            
+            // 将buffer设置为2kb
             int buffLength = 2048;
             byte[] buff = new byte[buffLength];
             int contentLen;
-
-            // Opens a file stream (System.IO.FileStream) to read the file to be uploaded
+            
+            // 打开一个文件流(System.IO.FileStream)来读上传的文件
             FileStream fs = fileInf.OpenRead();
 
             try
             {
-                // Stream to which the file to be upload is written
+                // 将文件写入流中
                 Stream strm = reqFTP.GetRequestStream();
-
-                // Read from the file stream 2kb at a time
+                
+                // 每次从文件读2kb到文件流
                 contentLen = fs.Read(buff, 0, buffLength);
-
-                // Till Stream content ends
+                
+                // 直到全部读完
                 while (contentLen != 0)
                 {
-                    // Write Content from the file stream to the FTP Upload Stream
+                    // 向FTP Upload Stream写文件的内容
                     strm.Write(buff, 0, contentLen);
                     contentLen = fs.Read(buff, 0, buffLength);
                 }
-
-                // Close the file stream and the Request Stream
+                
+                // 关闭文件流file stream 和请求流 Request Stream
                 strm.Close();
                 fs.Close();
             }
@@ -231,9 +231,13 @@ namespace FtpClient
         private void btnUpload_Click(object sender, EventArgs e)
         {
             OpenFileDialog opFilDlg = new OpenFileDialog();
+            opFilDlg.Multiselect = true;
             if (opFilDlg.ShowDialog() == DialogResult.OK)
             {
-                Upload(opFilDlg.FileName);
+                foreach (string FileName in opFilDlg.FileNames)
+                {
+                    Upload(FileName);
+                }
             }
         }
 
@@ -244,7 +248,11 @@ namespace FtpClient
             {
                 if (fldDlg.ShowDialog() == DialogResult.OK)
                 {
-                    Download(fldDlg.SelectedPath, txtUpload.Text.Trim());
+                    string[] fileNames = txtUpload.Text.Trim().Split(';');
+                    foreach (string fileName in fileNames)
+                    {
+                        Download(fldDlg.SelectedPath, fileName);
+                    }
                 }
             }
             else
@@ -268,7 +276,11 @@ namespace FtpClient
             OpenFileDialog fldDlg = new OpenFileDialog();
             if (txtUpload.Text.Trim().Length > 0)
             {
-                DeleteFTP(txtUpload.Text.Trim());
+                string[] fileNames = txtUpload.Text.Trim().Split(';');
+                foreach (string fileName in fileNames)
+                {
+                    DeleteFTP(fileName);
+                }
             }
             else
             {

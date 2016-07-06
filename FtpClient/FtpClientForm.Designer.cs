@@ -54,7 +54,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnFileDetailList = new System.Windows.Forms.Button();
             this.lstFiles = new System.Windows.Forms.ListBox();
-            this.btnLstFiles = new System.Windows.Forms.Button();
             this.grpBoxUpload.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -64,19 +63,19 @@
             // 
             // btnUpload
             // 
-            this.btnUpload.Location = new System.Drawing.Point(6, 45);
+            this.btnUpload.Location = new System.Drawing.Point(6, 42);
             this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(128, 23);
+            this.btnUpload.Size = new System.Drawing.Size(128, 21);
             this.btnUpload.TabIndex = 0;
-            this.btnUpload.Text = "Upload";
+            this.btnUpload.Text = "上传";
             this.btnUpload.UseVisualStyleBackColor = true;
             this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
             // txtUpload
             // 
-            this.txtUpload.Location = new System.Drawing.Point(6, 19);
+            this.txtUpload.Location = new System.Drawing.Point(6, 18);
             this.txtUpload.Name = "txtUpload";
-            this.txtUpload.Size = new System.Drawing.Size(539, 20);
+            this.txtUpload.Size = new System.Drawing.Size(539, 21);
             this.txtUpload.TabIndex = 1;
             // 
             // grpBoxUpload
@@ -87,18 +86,18 @@
             this.grpBoxUpload.Controls.Add(this.btnUpload);
             this.grpBoxUpload.Controls.Add(this.btndelete);
             this.grpBoxUpload.Controls.Add(this.btnDownload);
-            this.grpBoxUpload.Location = new System.Drawing.Point(12, 12);
+            this.grpBoxUpload.Location = new System.Drawing.Point(12, 11);
             this.grpBoxUpload.Name = "grpBoxUpload";
-            this.grpBoxUpload.Size = new System.Drawing.Size(551, 79);
+            this.grpBoxUpload.Size = new System.Drawing.Size(551, 73);
             this.grpBoxUpload.TabIndex = 2;
             this.grpBoxUpload.TabStop = false;
-            this.grpBoxUpload.Text = "Common FTP Operations";
+            this.grpBoxUpload.Text = "基本操作";
             // 
             // btnFileSize
             // 
-            this.btnFileSize.Location = new System.Drawing.Point(417, 45);
+            this.btnFileSize.Location = new System.Drawing.Point(417, 42);
             this.btnFileSize.Name = "btnFileSize";
-            this.btnFileSize.Size = new System.Drawing.Size(128, 23);
+            this.btnFileSize.Size = new System.Drawing.Size(128, 21);
             this.btnFileSize.TabIndex = 0;
             this.btnFileSize.Text = "Size";
             this.btnFileSize.UseVisualStyleBackColor = true;
@@ -106,21 +105,21 @@
             // 
             // btndelete
             // 
-            this.btndelete.Location = new System.Drawing.Point(280, 45);
+            this.btndelete.Location = new System.Drawing.Point(280, 42);
             this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(128, 23);
+            this.btndelete.Size = new System.Drawing.Size(128, 21);
             this.btndelete.TabIndex = 0;
-            this.btndelete.Text = "Delete";
+            this.btndelete.Text = "删除";
             this.btndelete.UseVisualStyleBackColor = true;
             this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // btnDownload
             // 
-            this.btnDownload.Location = new System.Drawing.Point(143, 45);
+            this.btnDownload.Location = new System.Drawing.Point(143, 42);
             this.btnDownload.Name = "btnDownload";
-            this.btnDownload.Size = new System.Drawing.Size(128, 23);
+            this.btnDownload.Size = new System.Drawing.Size(128, 21);
             this.btnDownload.TabIndex = 0;
-            this.btnDownload.Text = "Download";
+            this.btnDownload.Text = "下载";
             this.btnDownload.UseVisualStyleBackColor = true;
             this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
             // 
@@ -132,52 +131,52 @@
             this.groupBox5.Controls.Add(this.txtNewFilename);
             this.groupBox5.Controls.Add(this.txtCurrentFilename);
             this.groupBox5.Controls.Add(this.button1);
-            this.groupBox5.Location = new System.Drawing.Point(13, 97);
+            this.groupBox5.Location = new System.Drawing.Point(13, 90);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(550, 104);
+            this.groupBox5.Size = new System.Drawing.Size(550, 96);
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "File Rename";
+            this.groupBox5.Text = "文件重命名";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 48);
+            this.label5.Location = new System.Drawing.Point(9, 44);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 13);
+            this.label5.Size = new System.Drawing.Size(53, 12);
             this.label5.TabIndex = 4;
-            this.label5.Text = "New File Name";
+            this.label5.Text = "新文件名";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 22);
+            this.label4.Location = new System.Drawing.Point(9, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 13);
+            this.label4.Size = new System.Drawing.Size(53, 12);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Old File Name";
+            this.label4.Text = "旧文件名";
             // 
             // txtNewFilename
             // 
-            this.txtNewFilename.Location = new System.Drawing.Point(94, 45);
+            this.txtNewFilename.Location = new System.Drawing.Point(68, 42);
             this.txtNewFilename.Name = "txtNewFilename";
-            this.txtNewFilename.Size = new System.Drawing.Size(450, 20);
+            this.txtNewFilename.Size = new System.Drawing.Size(476, 21);
             this.txtNewFilename.TabIndex = 2;
             // 
             // txtCurrentFilename
             // 
-            this.txtCurrentFilename.Location = new System.Drawing.Point(94, 19);
+            this.txtCurrentFilename.Location = new System.Drawing.Point(68, 18);
             this.txtCurrentFilename.Name = "txtCurrentFilename";
-            this.txtCurrentFilename.Size = new System.Drawing.Size(450, 20);
+            this.txtCurrentFilename.Size = new System.Drawing.Size(476, 21);
             this.txtCurrentFilename.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(5, 71);
+            this.button1.Location = new System.Drawing.Point(5, 66);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(539, 23);
+            this.button1.Size = new System.Drawing.Size(539, 21);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Rename";
+            this.button1.Text = "重命名";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -186,27 +185,27 @@
             this.groupBox6.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox6.Controls.Add(this.txtNewDir);
             this.groupBox6.Controls.Add(this.btnewDir);
-            this.groupBox6.Location = new System.Drawing.Point(12, 207);
+            this.groupBox6.Location = new System.Drawing.Point(12, 191);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(551, 79);
+            this.groupBox6.Size = new System.Drawing.Size(551, 73);
             this.groupBox6.TabIndex = 6;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "New Directory";
+            this.groupBox6.Text = "新建目录";
             // 
             // txtNewDir
             // 
-            this.txtNewDir.Location = new System.Drawing.Point(6, 19);
+            this.txtNewDir.Location = new System.Drawing.Point(6, 18);
             this.txtNewDir.Name = "txtNewDir";
-            this.txtNewDir.Size = new System.Drawing.Size(539, 20);
+            this.txtNewDir.Size = new System.Drawing.Size(539, 21);
             this.txtNewDir.TabIndex = 1;
             // 
             // btnewDir
             // 
-            this.btnewDir.Location = new System.Drawing.Point(6, 45);
+            this.btnewDir.Location = new System.Drawing.Point(6, 42);
             this.btnewDir.Name = "btnewDir";
-            this.btnewDir.Size = new System.Drawing.Size(539, 23);
+            this.btnewDir.Size = new System.Drawing.Size(539, 21);
             this.btnewDir.TabIndex = 0;
-            this.btnewDir.Text = "Make Directory";
+            this.btnewDir.Text = "创建目录";
             this.btnewDir.UseVisualStyleBackColor = true;
             this.btnewDir.Click += new System.EventHandler(this.btnewDir_Click);
             // 
@@ -220,131 +219,121 @@
             this.groupBox7.Controls.Add(this.txtServerIP);
             this.groupBox7.Controls.Add(this.btnFTPSave);
             this.groupBox7.Controls.Add(this.label1);
-            this.groupBox7.Location = new System.Drawing.Point(13, 465);
+            this.groupBox7.Location = new System.Drawing.Point(13, 429);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(550, 88);
+            this.groupBox7.Size = new System.Drawing.Size(550, 85);
             this.groupBox7.TabIndex = 7;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "FTP Configurations";
+            this.groupBox7.Text = "服务器设置";
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(381, 28);
+            this.txtPassword.Location = new System.Drawing.Point(381, 30);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(163, 20);
+            this.txtPassword.Size = new System.Drawing.Size(163, 21);
             this.txtPassword.TabIndex = 7;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(378, 16);
+            this.label3.Location = new System.Drawing.Point(378, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Password";
+            this.label3.Text = "密码";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(193, 28);
+            this.txtUsername.Location = new System.Drawing.Point(193, 30);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(163, 20);
+            this.txtUsername.Size = new System.Drawing.Size(163, 21);
             this.txtUsername.TabIndex = 5;
             this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(190, 16);
+            this.label2.Location = new System.Drawing.Point(190, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.Size = new System.Drawing.Size(41, 12);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Username";
+            this.label2.Text = "用户名";
             // 
             // txtServerIP
             // 
-            this.txtServerIP.Location = new System.Drawing.Point(5, 28);
+            this.txtServerIP.Location = new System.Drawing.Point(5, 30);
             this.txtServerIP.Name = "txtServerIP";
-            this.txtServerIP.Size = new System.Drawing.Size(163, 20);
+            this.txtServerIP.Size = new System.Drawing.Size(163, 21);
             this.txtServerIP.TabIndex = 1;
             this.txtServerIP.TextChanged += new System.EventHandler(this.txtServerIP_TextChanged);
             // 
             // btnFTPSave
             // 
             this.btnFTPSave.Enabled = false;
-            this.btnFTPSave.Location = new System.Drawing.Point(5, 54);
+            this.btnFTPSave.Location = new System.Drawing.Point(5, 56);
             this.btnFTPSave.Name = "btnFTPSave";
-            this.btnFTPSave.Size = new System.Drawing.Size(539, 23);
+            this.btnFTPSave.Size = new System.Drawing.Size(539, 21);
             this.btnFTPSave.TabIndex = 0;
-            this.btnFTPSave.Text = "Apply";
+            this.btnFTPSave.Text = "连接";
             this.btnFTPSave.UseVisualStyleBackColor = true;
             this.btnFTPSave.Click += new System.EventHandler(this.btnFTPSave_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 16);
+            this.label1.Location = new System.Drawing.Point(2, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
+            this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Server IP";
+            this.label1.Text = "服务器IP";
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox2.Controls.Add(this.btnFileDetailList);
             this.groupBox2.Controls.Add(this.lstFiles);
-            this.groupBox2.Controls.Add(this.btnLstFiles);
-            this.groupBox2.Location = new System.Drawing.Point(13, 292);
+            this.groupBox2.Location = new System.Drawing.Point(13, 270);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(550, 167);
+            this.groupBox2.Size = new System.Drawing.Size(550, 154);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "File Listing: ";
+            this.groupBox2.Text = "列出文件";
             // 
             // btnFileDetailList
             // 
-            this.btnFileDetailList.Location = new System.Drawing.Point(7, 133);
+            this.btnFileDetailList.Location = new System.Drawing.Point(7, 123);
             this.btnFileDetailList.Name = "btnFileDetailList";
-            this.btnFileDetailList.Size = new System.Drawing.Size(537, 23);
+            this.btnFileDetailList.Size = new System.Drawing.Size(537, 21);
             this.btnFileDetailList.TabIndex = 2;
-            this.btnFileDetailList.Text = "List File Details";
+            this.btnFileDetailList.Text = "列出文件信息";
             this.btnFileDetailList.UseVisualStyleBackColor = true;
             this.btnFileDetailList.Click += new System.EventHandler(this.btnFileDetailList_Click);
             // 
             // lstFiles
             // 
             this.lstFiles.FormattingEnabled = true;
-            this.lstFiles.Location = new System.Drawing.Point(7, 45);
+            this.lstFiles.ItemHeight = 12;
+            this.lstFiles.Location = new System.Drawing.Point(7, 18);
             this.lstFiles.Name = "lstFiles";
-            this.lstFiles.Size = new System.Drawing.Size(537, 82);
+            this.lstFiles.Size = new System.Drawing.Size(537, 100);
             this.lstFiles.TabIndex = 1;
             this.lstFiles.SelectedIndexChanged += new System.EventHandler(this.lstFiles_SelectedIndexChanged);
             // 
-            // btnLstFiles
+            // FtpClientForm
             // 
-            this.btnLstFiles.Location = new System.Drawing.Point(6, 19);
-            this.btnLstFiles.Name = "btnLstFiles";
-            this.btnLstFiles.Size = new System.Drawing.Size(538, 23);
-            this.btnLstFiles.TabIndex = 0;
-            this.btnLstFiles.Text = "List Files";
-            this.btnLstFiles.UseVisualStyleBackColor = true;
-            this.btnLstFiles.Click += new System.EventHandler(this.btnLstFiles_Click);
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(579, 565);
+            this.ClientSize = new System.Drawing.Size(579, 526);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.grpBoxUpload);
-            this.Name = "Form1";
-            this.Text = "FTP App : Server - ";
+            this.Name = "FtpClientForm";
+            this.Text = "FTP 客户端 : Server - ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grpBoxUpload.ResumeLayout(false);
             this.grpBoxUpload.PerformLayout();
@@ -356,6 +345,7 @@
             this.groupBox7.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -365,7 +355,6 @@
         private System.Windows.Forms.GroupBox grpBoxUpload;
         private System.Windows.Forms.Button btnDownload;
         private System.Windows.Forms.Button btndelete;
-        private System.Windows.Forms.Button btnFileSize;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox txtNewFilename;
         private System.Windows.Forms.TextBox txtCurrentFilename;
@@ -386,7 +375,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnFileDetailList;
         private System.Windows.Forms.ListBox lstFiles;
-        private System.Windows.Forms.Button btnLstFiles;
+        private System.Windows.Forms.Button btnFileSize;
     }
 }
 

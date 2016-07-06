@@ -4,3 +4,10 @@ C:\git\Ftp\FtpClient\FtpClient\obj\Debug\FtpClient.Properties.Resources.resource
 C:\git\Ftp\FtpClient\FtpClient\obj\Debug\FtpClient.csproj.GenerateResource.Cache
 C:\git\Ftp\FtpClient\FtpClient\obj\Debug\FtpClient.exe
 C:\git\Ftp\FtpClient\FtpClient\obj\Debug\FtpClient.pdb
+C:\git\FTP-client\FtpClient\obj\Debug\FtpClient.exe
+C:\git\FTP-client\FtpClient\obj\Debug\FtpClient.pdb
+C:\git\FTP-client\FtpClient\bin\Debug\FtpClient.exe
+C:\git\FTP-client\FtpClient\bin\Debug\FtpClient.pdb
+C:\git\FTP-client\FtpClient\obj\Debug\FtpClient.Properties.Resources.resources
+C:\git\FTP-client\FtpClient\obj\Debug\FtpClient.csproj.GenerateResource.Cache
+C:\git\FTP-client\FtpClient\obj\Debug\FtpClient.FtpClientForm.resources
