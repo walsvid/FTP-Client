@@ -31,7 +31,6 @@
             this.btnUpload = new System.Windows.Forms.Button();
             this.txtUpload = new System.Windows.Forms.TextBox();
             this.grpBoxUpload = new System.Windows.Forms.GroupBox();
-            this.btnFileSize = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
             this.btnDownload = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -65,7 +64,7 @@
             // 
             this.btnUpload.Location = new System.Drawing.Point(6, 42);
             this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(128, 21);
+            this.btnUpload.Size = new System.Drawing.Size(178, 21);
             this.btnUpload.TabIndex = 0;
             this.btnUpload.Text = "上传";
             this.btnUpload.UseVisualStyleBackColor = true;
@@ -82,7 +81,6 @@
             // 
             this.grpBoxUpload.BackColor = System.Drawing.SystemColors.Control;
             this.grpBoxUpload.Controls.Add(this.txtUpload);
-            this.grpBoxUpload.Controls.Add(this.btnFileSize);
             this.grpBoxUpload.Controls.Add(this.btnUpload);
             this.grpBoxUpload.Controls.Add(this.btndelete);
             this.grpBoxUpload.Controls.Add(this.btnDownload);
@@ -93,21 +91,11 @@
             this.grpBoxUpload.TabStop = false;
             this.grpBoxUpload.Text = "基本操作";
             // 
-            // btnFileSize
-            // 
-            this.btnFileSize.Location = new System.Drawing.Point(417, 42);
-            this.btnFileSize.Name = "btnFileSize";
-            this.btnFileSize.Size = new System.Drawing.Size(128, 21);
-            this.btnFileSize.TabIndex = 0;
-            this.btnFileSize.Text = "Size";
-            this.btnFileSize.UseVisualStyleBackColor = true;
-            this.btnFileSize.Click += new System.EventHandler(this.btnFileSize_Click);
-            // 
             // btndelete
             // 
-            this.btndelete.Location = new System.Drawing.Point(280, 42);
+            this.btndelete.Location = new System.Drawing.Point(369, 42);
             this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(128, 21);
+            this.btndelete.Size = new System.Drawing.Size(176, 21);
             this.btndelete.TabIndex = 0;
             this.btndelete.Text = "删除";
             this.btndelete.UseVisualStyleBackColor = true;
@@ -115,9 +103,9 @@
             // 
             // btnDownload
             // 
-            this.btnDownload.Location = new System.Drawing.Point(143, 42);
+            this.btnDownload.Location = new System.Drawing.Point(190, 42);
             this.btnDownload.Name = "btnDownload";
-            this.btnDownload.Size = new System.Drawing.Size(128, 21);
+            this.btnDownload.Size = new System.Drawing.Size(173, 21);
             this.btnDownload.TabIndex = 0;
             this.btnDownload.Text = "下载";
             this.btnDownload.UseVisualStyleBackColor = true;
@@ -375,7 +363,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnFileDetailList;
         private System.Windows.Forms.ListBox lstFiles;
-        private System.Windows.Forms.Button btnFileSize;
     }
 }
 

@@ -409,5 +409,21 @@ namespace FtpClient
 
         }
 
+        private void btnDelDIr_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fldDlg = new OpenFileDialog();
+            if (txtUpload.Text.Trim().Length > 0)
+            {
+                string[] fileNames = txtUpload.Text.Trim().Split(';');
+                foreach (string fileName in fileNames)
+                {
+                    DeleteFTP(fileName);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter the File name to delete");
+            }
+        }
     }
 }
